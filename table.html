@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>table</title>
-</head>
-<body>
-    <h2>상품 구성</h2>
-    <table border="1" cellspacing="5" cellpadding="2" width="50%" height="400px">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>table</title>
+    </head>
+    <body>
+        <h2>상품 구성</h2>
+        <table border="1" cellspacing="5" cellpadding="2" width="50%" height="400px">
+        <!-- caption : table title -->
+        <!-- <table> 요소는 단 하나의 <caption> 요소만을 명시할 수 있으며, 
+            <caption> 요소는 언제나 <table> 요소 바로 다음에 위치해야 합니다. -->
+        <!-- <caption> 요소의 콘텐츠는 테이블 바로 위쪽에 가운데 정렬되어 표시되지만, 
+            CSS의 text-align이나 caption-side 속성을 사용하여 캡션의 위치나 정렬 방법 등을 변경할 수 있습니다. -->
         <caption>
             <strong>선물용과 가정용 구성</strong>
         </caption>
+        <!-- tr : 셀들로 이루어진 하나의 행(row)을 정의할 때 사용 -->
+        <!-- <tr> 요소는 하나 이상의 <th> 요소(data cell)나 <td> 요소(header cell)를 포함할 수 있다. -->
         <tr>
+            <!-- th : 테이블에서 제목이 되는 헤더 셀(header cell)을 정의할 때 사용 -->
             <th>용도</th>
             <th>중량</th>
             <th>개수</th>
             <th>가격</th>
         </tr>
         <tr>
+            <!-- td :  하나의 데이터 셀(data cell)을 정의할 때 사용 -->
+            <!-- rowspan : 해당 데이터 셀(data cell)이 확장될 행(row)의 개수를 명시 -->
             <td rowspan="2">선물용</td>
             <td>5kg</td>
             <td>18과~26과</td>
             <td>52,000</td>
         </tr>
         <tr>
-            
             <td>3kg</td>
             <td>20과~30과</td>
             <td>42,000</td>
@@ -37,15 +46,15 @@
             <td>52,000</td>
         </tr>
         <tr>
-            
             <td>3kg</td>
             <td>20과~30과</td>
             <td>42,000</td>
         </tr>
-    </table>
-    <br>
-    <table border="1" cellspacing="0" width="50%" height="200px" style="text-align: center;">
-        <tr style="background-color: rgb(153, 248, 216);">
+        </table>
+        <br />
+        <table border="1" cellspacing="0" width="50%" height="200px" style="text-align: center">
+        <tr style="background-color: rgb(153, 248, 216)">
+            <!-- colspan : 해당 데이터 셀(data cell)이 확장될 열(column)의 개수를 명시-->
             <th colspan="3">표 제목 셀1</th>
             <th rowspan="5">표 제목 셀2</th>
         </tr>
@@ -67,6 +76,6 @@
             <td>5-2</td>
             <td>5-3</td>
         </tr>
-    </table>
-</body>
+        </table>
+    </body>
 </html>
